@@ -1,0 +1,60 @@
+
+html{
+	background-color: #ffc600;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+.panels{
+	min-height: 100vh;
+	display: flex;
+	overflow: hidden;
+}
+.panel{
+	background-size: cover;
+	background-color: #A9A9A9;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+    font-size: 25px;
+    background-position: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;    
+}
+.panel1{background-image: url("http://news-eleven.com/wp-content/uploads/2018/02/nintchdbpict0003603476092-e1508257235865.jpg");}
+.panel2{background-image: url("https://i.imgur.com/1gLWNJ6.png");}
+.panel3{background-image: url("http://minionswallpaper.com/Download-Wallpapers/cristiano-ronaldo-wallpapers-high-resolution-To-Download-Wallpaper.jpg");}
+.panel4{background-image: url("https://images.performgroup.com/di/library/goal_es/54/df/neymar-barcelona-psg-uefa-champions-league-12102014_3e8u39s7ibql1qrnjmjnewpm0.jpg?t=901747506");}
+.panel5{background-image: url("https://img.fcbayern.com/image/fetch/f_auto,h_768,q_auto:good,w_1366/https://fcbayern.com/binaries/content/gallery/fc-bayern/homepage/saison-16-17/profis/neuer/neuer_ima_081016.jpg/neuer_ima_081016.jpg/fcbhippo%253Axtralargesixteentonine%3Fv%3D1478688244518");}
+.panel > *{
+	margin: 0;
+	width: 100%;
+    transition:transform 0.5s;
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: flex-end;
+	align-items: center;
+	font-weight: 100px; 
+}
+.panel > *: first-child{transform: translateY(-100%);}
+.panel.open-active > *: first-child{transform: translateY(0);}
+.panel > *: last-child{transform: translateY(100%);}
+.panel.open-active > *: last-child{transform: translateY(0);}
+.panel p{
+	text-transform: uppercase;
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em;
+	font-weight: 100;
+
+}
+.panel.open{
+	flex: 5;
+	font-size: 40px; 
+}
