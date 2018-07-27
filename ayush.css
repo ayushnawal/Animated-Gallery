@@ -54,6 +54,12 @@ body{
 	font-weight: 100;
 
 }
+.panel3 > *{
+justify-content: flex-start;
+}
+.panel5 > *{
+	justify-content: flex-start;
+}
 .panel.open{
 	flex: 5;
 	font-size: 40px; 
